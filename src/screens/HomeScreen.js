@@ -1,11 +1,11 @@
 import React from "react";
-import {Text, View, StyleSheet, Button} from "react-native";
-
+import {Text, View, StyleSheet} from "react-native";
+import {Button } from "react-native-paper";
 const HomeScreen =(props)=>{
   return(
     <View>
     <Text> Hello!!</Text>
-    <Button 
+    {/* <Button
     title="Tap here" 
     onPress={()=>props.navigation.navigate('Home')}/>
     <Button 
@@ -18,12 +18,35 @@ const HomeScreen =(props)=>{
     <Button
     title="colorscreen"
     onPress={()=>{props.navigation.navigate("Color")}}
-    />
+    /> */}
+    <Button 
+    onPress={()=>props.navigation.navigate('Home')}
+    >
+    Tap here 
+    </Button>
+    
+    <Button 
+    onPress={()=>props.navigation.navigate('color')}
+    >
+    Tap here ok 
+    </Button>
+    <Button
+    onPress={()=>{props.navigation.navigate("Input")}}
+>    
+    Counter app
+    </Button>
+    
+    <Button
+    onPress={()=>{props.navigation.navigate("Color")}}
+    >    
+    colorscreen
+    </Button>
 
-<Button
-    title="coloradscreen"
+    <Button
     onPress={()=>{props.navigation.navigate("Coloradscreen")}}
-    />
+    >
+    coloradscreen
+    </Button>
 
 {/* <Button
     title="coloradscreen1"
@@ -36,10 +59,11 @@ const HomeScreen =(props)=>{
     /> */}
 
 
-<Button
-    title="user input"
+  <Button
     onPress={()=>{props.navigation.navigate("Input")}}
-    />
+    >
+    user input
+  </Button>
     </View>
   );
 }
