@@ -6,7 +6,7 @@ const NavigationButton=(props)=>{
     console.log(props);
     const navigation=useNavigation();
     return( <Button 
-        type="contained"
+        mode="contained"
         onPress={()=>navigation.navigate(props.screenToDisplay)}
         >
         {props.title}
