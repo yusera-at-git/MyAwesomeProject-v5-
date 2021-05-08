@@ -11,6 +11,8 @@ import ColorAdjustmentScreen1 from "./src/screens/ColorAdjustmentScreen2";
 import NavTab1 from "./src/screens/NavTab1";
 import ColorScreen2 from "./src/screens/ColorScreen2";
 import UserInput from "./src/screens/UserInput";
+import ImageComponents from "./src/components/ImageComponents";
+import ImageScreen from "./src/screens/ImageScreen";
 
 const stack=createStackNavigator();
 
@@ -21,6 +23,9 @@ function homestack(){
       <stack.Screen name="color" component={ColorAdjustmentScreen1}/>
       <stack.Screen name="Input" component={ UserInput}/>
       <stack.Screen name="Coloradscreen" component={ ColorScreen2}/>
+      <stack.Screen name="img" component={ImageScreen}/>
+
+
 
     </stack.Navigator>
   );

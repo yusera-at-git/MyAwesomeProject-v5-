@@ -1,6 +1,7 @@
 import React from "react";
 import {Text, View, StyleSheet} from "react-native";
 import {Button } from "react-native-paper";
+import NavigationButton from "../components/NavigationButton";
 const HomeScreen =(props)=>{
   return(
     <View>
@@ -19,51 +20,38 @@ const HomeScreen =(props)=>{
     title="colorscreen"
     onPress={()=>{props.navigation.navigate("Color")}}
     /> */}
-    <Button 
+    {/* <Button 
     onPress={()=>props.navigation.navigate('Home')}
     >
     Tap here 
-    </Button>
-    
-    <Button 
-    onPress={()=>props.navigation.navigate('color')}
-    >
-    Tap here ok 
-    </Button>
-    <Button
-    onPress={()=>{props.navigation.navigate("Input")}}
->    
-    Counter app
-    </Button>
-    
-    <Button
-    onPress={()=>{props.navigation.navigate("Color")}}
-    >    
-    colorscreen
-    </Button>
-
-    <Button
-    onPress={()=>{props.navigation.navigate("Coloradscreen")}}
-    >
-    coloradscreen
-    </Button>
-
-{/* <Button
-    title="coloradscreen1"
-    onPress={()=>{props.navigation.navigate("Coloradscreen1")}}
-/> */}
-
-{/* <Button
-    title="Counterusereducer"
-    onPress={()=>{props.navigation.navigate("Counterred")}}
-    /> */}
-
-
-  <Button
-    onPress={()=>{props.navigation.navigate("Input")}}
-    >
-    user input
-  </Button>
+    </Button> */}
+        {/* //*****CUSTOM UI COMPONENT CREATED WITH REACT-NATIVE-PAPER LIB */  }
+   
+   {/* //1 */}
+    <NavigationButton 
+    screenToDisplay="Home"
+    title="Home "
+    />
+   {/* //2 */}
+    <NavigationButton 
+    screenToDisplay="img"
+    title="image screen "
+    />
+    {/* //3 */}
+    <NavigationButton 
+    screenToDisplay="color"
+    title="Tap here color screen "
+    />
+    {/* //4 */}
+    <NavigationButton 
+    screenToDisplay="Input"
+    title="Tap here for Input screen "
+    />
+    {/* //5 */}
+    <NavigationButton 
+    screenToDisplay="Coloradscreen"
+    title="Tap here for Random color generator "
+    />
     </View>
   );
 }

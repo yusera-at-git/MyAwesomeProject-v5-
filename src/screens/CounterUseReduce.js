@@ -1,7 +1,7 @@
 import React from "react";
 import {Text , View, StyleSheet, Button} from "react-native";
 import { State } from "react-native-gesture-handler";
-import { useReducer, useState } from "react/cjs/react.development";
+import { useReducer, useState } from "react";
 
 
 /**********STEP 2: CREATE/DEFINE REDUCER()************/

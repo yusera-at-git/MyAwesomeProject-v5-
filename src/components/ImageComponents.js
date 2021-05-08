@@ -1,12 +1,17 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import {View, Text, StyleSheet, Image} from "react-native";
+import {View, Text, StyleSheet, Image, Button} from "react-native";
 
 const ImageComponents =props=>{
     console.log(props);
+    const navigation=useNavigation();
     return(
         <View style={style.container}>
             <Image source={props.imageSource} style={[style.container,{width:90, height:90},style.textStyle]}/>
+
             <Text>{props.title}</Text>
+            <Button title="display"  onPress={()=>navigation.navigate('color')}/>
+
         </View>
     );
 }
