@@ -19,8 +19,8 @@ const ImageComponents =props=>{
 const style=StyleSheet.create(
     {
         container:{
-            fontSize:20,
-            color:"red",
+            // fontSize:20,
+            // color:"red",
             alignItems:"center",
             justifyContent:"center"
         },

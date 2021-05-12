@@ -1,7 +1,7 @@
 import React from "react";
-import {Text, View, StyleSheet} from "react-native";
-import {Button } from "react-native-paper";
+import {Text, View, StyleSheet,Button} from "react-native";
 import NavigationButton from "../components/NavigationButton";
+import Buttons from "./Buttons";
 const HomeScreen =(props)=>{
   return(
     <View>
@@ -27,6 +27,7 @@ const HomeScreen =(props)=>{
     </Button> */}
         {/* //*****CUSTOM UI COMPONENT CREATED WITH REACT-NATIVE-PAPER LIB */  }
    
+   {/* <Button>hello</Button> */}
    {/* //1 */}
     <NavigationButton 
     screenToDisplay="Home"
@@ -51,6 +52,11 @@ const HomeScreen =(props)=>{
     <NavigationButton 
     screenToDisplay="Coloradscreen"
     title="Tap here for Random color generator "
+    />
+
+<NavigationButton 
+    screenToDisplay="Buttonss"
+    title="Tap here for Buttons screen "
     />
     </View>
   );

@@ -24,9 +24,7 @@ function homestack(){
       <stack.Screen name="Input" component={ UserInput}/>
       <stack.Screen name="Coloradscreen" component={ ColorScreen2}/>
       <stack.Screen name="img" component={ImageScreen}/>
-
-
-
+      <stack.Screen name="Buttonss" component={Buttons}/>
     </stack.Navigator>
   );
 }
